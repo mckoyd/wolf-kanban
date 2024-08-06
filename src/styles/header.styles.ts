@@ -1,3 +1,4 @@
+import { CSSProperties } from "react";
 import { tss } from "tss-react/mui";
 
 export const useHeaderStyles = tss.create(({ theme }) => ({
@@ -6,7 +7,30 @@ export const useHeaderStyles = tss.create(({ theme }) => ({
     background: theme.palette.common.white,
     alignItems: "center",
     padding: "0 1em",
+    justifyContent: "space-between",
   },
-  logoContainer: {},
+  headerLeft: {
+    display: "flex",
+    gap: "1em",
+  },
+  headerRight: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "flex-end",
+    flexGrow: 1,
+    gap: "0.5em",
+  },
+  logoContainer: {
+    display: "flex",
+    alignContent: "center",
+    justifyContent: "center",
+  },
   mobileLogo: {},
+  platformLaunchContainer: {
+    display: "flex",
+    alignItems: "center",
+  },
+  platformLaunchText: {
+    ...(theme.typography.headingL as CSSProperties),
+  },
 }));
