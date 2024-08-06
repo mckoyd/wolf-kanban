@@ -9,3 +9,8 @@ export const menuBtnOpenState = atom({
   key: "menuBtnOpenStateKey",
   default: false,
 });
+
+export const addNewColumnClickedState = atom({
+  key: "addNewColumnClickedStateKey",
+  default: false,
+});

@@ -60,6 +60,7 @@ const theme: Theme = createTheme({
       redHover,
       linesLight,
       linesDark,
+      purpleHover,
     },
   },
 

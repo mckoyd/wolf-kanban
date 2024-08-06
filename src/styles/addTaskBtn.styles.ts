@@ -8,7 +8,7 @@ export const useAddTaskBtnStyles = tss.create(({ theme }) => ({
     height: "2em",
     borderRadius: "1.5em",
     "&:disabled": {
-      opacity: "0.25",
+      background: theme.palette.common.purpleHover,
     },
     "&:hover": {},
   },
