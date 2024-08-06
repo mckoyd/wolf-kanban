@@ -8,6 +8,7 @@ import { platformLaunchText } from "../config/header.config";
 import PlatformLaunchBtn from "./PlatformLaunchBtn";
 import AddTaskBtn from "./AddTaskBtn";
 import MenuBtn from "./MenuBtn";
+import PlatformLaunchModal from "./PlatformLaunchModal";
 
 const Header: React.FC = () => {
   const { classes } = useHeaderStyles();
@@ -24,6 +25,7 @@ const Header: React.FC = () => {
           </Typography>
           <PlatformLaunchBtn />
         </Grid>
+        <PlatformLaunchModal />
       </Grid>
       <Grid item className={classes.headerRight}>
         <AddTaskBtn />
